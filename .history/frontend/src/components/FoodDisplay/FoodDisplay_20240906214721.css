@@ -1,0 +1,41 @@
+.food-display{
+    margin-top: 30px;
+
+}
+.food-display h2{
+    font-size: max(2vw,24px);
+    font-weight:600 ;
+}
+.food-display-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    margin-top: 10px;
+    gap: 30px;
+    row-gap: 50px;
+}
+.food-item img {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the image fills the box while maintaining aspect ratio */
+    border-radius: 8px; /* Keep a slight roundness to match the card design */
+}
+.food-item {
+    width: 200px; /* Adjust as per your preference */
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: white;
+}
+
+.food-item .description {
+    margin-top: 10px;
+    line-height: 1.2; /* Reduces space between lines in the description */
+}
+
+.food-item .price {
+    font-size: 18px;
+    color: #e74c3c;
+    margin-top: 5px;
+}

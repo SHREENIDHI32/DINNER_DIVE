@@ -1,0 +1,95 @@
+.food-item {
+    width: 240px; /* Set a consistent width for all food items */
+    margin: 10px; /* Ensure some margin between the items */
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #00000015;
+    transition: 0.3s;
+    animation: fadeIn 1s;
+    position: relative; /* Required for correct positioning of the counter/add button */
+    background-color: white; /* Ensure a consistent background */
+}
+
+.food-item-image {
+    width: 100%;
+    height: 200px; /* Fix the height to make all images equal */
+    object-fit: cover; /* Ensures images maintain their aspect ratio and fit the container */
+    border-radius: 15px 15px 0px 0px;
+}
+
+.food-item-info {
+    padding: 10px 15px; /* Reduced padding for a more compact look */
+}
+
+.food-item-name-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px; /* Reduced margin */
+}
+
+.food-item-name-rating p {
+    font-size: 18px; /* Slightly smaller font size for a compact look */
+    font-weight: 500;
+}
+
+.food-item-name-rating img {
+    width: 60px; /* Adjusted size for the rating stars */
+}
+
+.food-item-desc {
+    color: #676767;
+    font-size: 12px;
+    margin-top: 5px; /* Add some space between description and name */
+    line-height: 1.4; /* Improve readability */
+}
+
+.food-item-price {
+    color: tomato;
+    font-size: 18px; /* Adjusted font size for a smaller, consistent look */
+    font-weight: 500;
+    margin: 5px 0px; /* Reduced margin for a tighter layout */
+}
+
+.food-item-img-container {
+    position: relative;
+}
+
+.food-item-img-container .add {
+    width: 40px; /* Reduced size for the add button */
+    height: 40px;
+    position: absolute;
+    bottom: 10px; /* Adjusted position for a tighter fit */
+    right: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+}
+
+.food-item-counter {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Same shadow for consistency */
+}
+
+.food-item-counter img {
+    width: 25px; /* Adjusted size for the counter button */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .food-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
